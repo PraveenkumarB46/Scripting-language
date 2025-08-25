@@ -1,0 +1,13 @@
+
+function findSecondHighest(score) 
+    let uniqueScores = [...new Set(scores)];
+
+    uniqueScores.sort((a, b) => b - a);
+
+
+    return uniqueScores[1];
+}
+
+
+let scores = [50, 85, 92, 92, 76, 60];
+console.log("Second Highest Score:", findSecondHighest(scores));
